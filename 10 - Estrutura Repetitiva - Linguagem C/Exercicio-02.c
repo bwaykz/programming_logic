@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <string.h>
+
+void clear_entry() {
+  char c;
+  while ((c = getchar()) != '\n' && c != EOF) {
+  }
+}
+
+void read_text(char *buffer, int length) {
+  fgets(buffer, length, stdin);
+  strtok(buffer, "\n");
+}
+
+int main() {
+
+  int x, y, z;
+  double media;
+
+
+  media = 0;
+  printf("Digite as idades: \n");
+  
+  scanf("%d", &x);
+
+  scanf("%d", &y);
+  
+  scanf("%d", &z);
+
+  media = (double) (x + y + z) / 3;
+
+  printf("Media = %.2lf ", media);
+
+
+
+
+
+
+
+}
